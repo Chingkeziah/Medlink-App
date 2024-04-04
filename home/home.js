@@ -18,6 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
     renderCalendar(currentDate);
   });
 
+daysContainer.addEventListener("click", (e) => {
+  const selectedDay = e.target.textContent;
+  if (selectedDay) {
+    console.log(`Selected day: ${selectedDay}`);
+  }
+});
+
   function renderCalendar(date) {
     const month = date.toLocaleString("default", { month: "long" });
     const year = date.getFullYear();
@@ -26,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const firstDayOfMonth = new Date(year, date.getMonth(), 1);
     const lastDayOfMonth = new Date(year, date.getMonth() + 1, 0);
+    const today = new Date();
 
     daysContainer.innerHTML = "";
 
@@ -36,6 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (i === 1) {
         day.style.gridColumnStart = firstDayOfMonth.getDay() + 1;
+      }
+
+      if (
+        date.getMonth() === today.getMonth() &&
+        date.getFullYear() === today.getFullYear() &&
+        i === today.getDate()
+      ) {
+        day.classList.add("current-date");
       }
 
       daysContainer.appendChild(day);

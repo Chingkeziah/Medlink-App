@@ -313,11 +313,10 @@ ul li:hover a {
 .calendar {
   max-width: 414px;
   border-radius: 20px;
-  background: var(--Secondary-0, #fff5f8);
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25) inset,
-    0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--Primary-900, #007a87);
   justify-content: right;
   align-items: right;
+  padding: 20px;
 }
 
 .date-area {
@@ -362,14 +361,6 @@ ul li:hover a {
   flex-shrink: 0;
 }
 
-.button {
-  padding: 5px 10px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
 .days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -377,6 +368,124 @@ ul li:hover a {
 
 .day {
   padding: 10px;
-  border: 1px solid #ccc;
   text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.day:hover {
+  background: var(--Secondary-100, #fdc0d4);
+}
+
+.current-date {
+  background-color: var(--Primary-900, #007a87);
+  color: #fff;
+}
+
+.doctor-calendar {
+  display: block;
+  padding: 5px 10px 40px 10px;
+}
+
+.con-1 {
+  display: flex;
+  background: #007a87;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.doc-detail h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+}
+
+.doc-detail p {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
+.doc-detail .btn {
+  border-radius: 20px;
+  background: var(--Secondary-100, #fdc0d4);
+  font-family: "DM Sans";
+  width: 142px;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
+.doc-date {
+  margin-top: 7%;
+  line-height: 22px;
+}
+
+.con-2 {
+  display: flex;
+  background: #fcfbf7;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 15px;
+  color: var(--Greys-1400, #111);
+  margin-top: 15px;
+}
+
+.con-3 {
+  display: flex;
+  background: #fcfbf7;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 15px;
+  color: var(--Greys-1400, #111);
+  margin-top: 15px;
+}
+
+.con-4 {
+  display: flex;
+  background: #fcfbf7;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 15px;
+  color: var(--Greys-1400, #111);
+  margin-top: 15px;
+}
+
+.con-2 .doc-date {
+  border-radius: 20px;
+  background: #ffd979;
+  padding: 10px;
+}
+
+.con-3 .doc-date {
+  border-radius: 20px;
+  background: #afc1ff;
+  padding: 10px;
+}
+
+.con-4 .doc-date {
+  border-radius: 20px;
+  background: #ffd2df;
+  padding: 10px;
+}
+
+.con-2 .btn,
+.con-3 .btn,
+.con-4 .btn {
+  background: #007a87;
+  color: #fff;
 }
