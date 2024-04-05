@@ -298,7 +298,7 @@ ul li:hover a {
 
 /* calendar styling*/
 .schedule {
-  margin-left: 58%;
+  margin-right: 5%;
 }
 
 .schedule h3 {
@@ -311,7 +311,7 @@ ul li:hover a {
 }
 
 .calendar {
-  max-width: 414px;
+  width: 414px;
   border-radius: 20px;
   border: 1px solid var(--Primary-900, #007a87);
   justify-content: right;
@@ -488,4 +488,109 @@ ul li:hover a {
 .con-4 .btn {
   background: #007a87;
   color: #fff;
+}
+
+/*Appointment section styling */
+
+/*Available Doctors styling */
+.appointment-area {
+  display: flex;
+  margin: 5%;
+  justify-content: space-between;
+}
+
+.set-appointment {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+
+.doctors {
+  width: 622px;
+  height: 475px;
+  border-radius: 10px;
+  border: 1px solid var(--Primary-900, #007a87);
+}
+
+.doctors-header {
+  display: flex;
+  width: 488px;
+  margin: 5px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--Greys-1100, #3e3c3c);
+}
+
+.text-1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.text-2 {
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
+.text-arrow {
+  margin-left: -30%;
+}
+
+.doctor-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.doctor-info h4 {
+  color: var(--Greys-1200, #2f2e2e);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  padding: 10px;
+}
+
+.doctor-info p {
+  color: var(--Greys-1200, #2f2e2e);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  padding: 10px;
+}
+
+.name,
+.department,
+.time {
+  width: 150px;
+}
+
+.appointments {
+  width: 622px;
+  height: 475px;
+  border-radius: 10px;
+  border: 1px solid var(--Primary-900, #007a87);
+}
+
+.appointment-header {
+  display: flex;
+  width: 580px;
+  margin: 5px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--Greys-1100, #3e3c3c);
+}
+
+.appointment-header .text-arrow {
+  margin: 0;
 }

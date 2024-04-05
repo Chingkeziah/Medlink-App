@@ -18,12 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
     renderCalendar(currentDate);
   });
 
-daysContainer.addEventListener("click", (e) => {
-  const selectedDay = e.target.textContent;
-  if (selectedDay) {
-    console.log(`Selected day: ${selectedDay}`);
-  }
-});
+  daysContainer.addEventListener("click", (e) => {
+    const selectedDay = e.target.textContent;
+    if (selectedDay) {
+      console.log(`Selected day: ${selectedDay}`);
+    }
+  });
 
   function renderCalendar(date) {
     const month = date.toLocaleString("default", { month: "long" });
