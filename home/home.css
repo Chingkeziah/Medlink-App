@@ -544,7 +544,6 @@ ul li:hover a {
   display: flex;
   justify-content: space-around;
   padding: 12px;
-  align-items: flex-start;
   gap: 20px;
 }
 
@@ -570,7 +569,8 @@ ul li:hover a {
 
 .name,
 .department,
-.time {
+.time,
+.date {
   width: 150px;
 }
 
