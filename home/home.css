@@ -26,12 +26,16 @@ body {
   text-align: center;
   line-height: 160%;
   user-select: none;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .header-logo {
-  display: grid;
-  margin-left: 25px;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-logo img {
+  width: 120px;
 }
 
 .sidebar ul a {
@@ -73,7 +77,7 @@ ul li:hover a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5% 20px 4% 20px;
+  padding: 25px 0;
   background: #fcfbf7;
   border-bottom: 1px solid rgba(218, 210, 184, 0.7);
   width: 100%;
@@ -597,27 +601,19 @@ ul li:hover a {
 }
 /* End of appointment section */
 
-/* Footer styling */
-footer {
-  margin-top: 2%;
-}
+/* Contact styling */
 
 .contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  margin-left: 3%;
 }
 
 .booking {
-  width: 234px;
-  display: grid;
-  justify-content: center;
-}
-
-.booking-img {
-  display: grid;
-  margin-left: 25px;
+ align-items: center;
+ justify-content: center;
 }
 
 .booking-text {
@@ -715,6 +711,12 @@ news p {
   background: var(--Greys-300, #eaeaea);
   color: var(--Greys-1400, #111);
 }
+/* End of contact styling */
+
+/* Footer styling */
+footer {
+  margin-top: 2px;
+}
 
 .copyright {
   background: var(--Primary-900, #007a87);
@@ -732,3 +734,8 @@ news p {
   line-height: 22px;
   letter-spacing: 0.25px;
 }
+
+
+
+
+/* Media Query * /
