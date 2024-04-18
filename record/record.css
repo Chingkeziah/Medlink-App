@@ -13,6 +13,10 @@ body {
   background: #fcfbf7;
 }
 
+.record-section {
+  width: 100%;
+}
+
 /* Sidebar styling */
 .sidebar {
   float: left;
@@ -68,6 +72,11 @@ ul li:hover a {
 }
 /* End of sidebar styling */
 
+.wrapper {
+  margin-left: 16%;
+}
+
+/* Header styling */
 .record-header {
   display: flex;
   justify-content: space-between;
@@ -75,15 +84,11 @@ ul li:hover a {
   padding: 35px 20px;
   background: #fcfbf7;
   border-bottom: 1px solid rgba(218, 210, 184, 0.7);
-  max-width: 100%;
-  height: 100%;
 }
 
 .text h1 {
   color: var(--Primary-900, #007a87);
-  font-family: "Sofia Pro";
   font-size: 34px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.25px;
@@ -125,4 +130,317 @@ ul li:hover a {
   width: 12px;
   height: 12px;
   border-radius: 20px;
+}
+
+/*End of Header styling */
+
+/* Headline styling area */
+.record-headline {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 20px;
+}
+.user {
+  width: 161px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user p {
+  color: var(--Primary-900, #007a87);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.search-bar {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.search-input {
+  width: 1170px;
+  height: 60px;
+  padding: 16px 32px;
+  border-radius: 10px;
+  border: 1px solid var(--Greys-400, #e0dfdf);
+}
+
+.search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button img {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  top: 10px;
+}
+/* Hospital list styling */
+.hospital-list {
+  padding: 20px;
+  margin-bottom: 20%;
+  margin-left: 3%;
+}
+
+.hospital-list p {
+  color: var(--Greys-1300, #201f1f);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover {
+   transform: scale(1.05);
+   background: #007a87;
+   p, h4 {
+    color: #fff;
+   }
+}
+
+.card-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--Primary-900, #007a87);
+  width: 361px;
+  padding: 20px 16px;
+  gap: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-1 h4 {
+  color: var(--Greys-Search-bar, #fff);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.1px;
+}
+
+.card-1 p {
+  color: var(--Greys-200, #f5f4f4);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.25px;
+}
+
+.hospital-list .review,
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.card-2 {
+  border-radius: 10px;
+  border: 1px solid var(--Greys-400, #e0dfdf);
+  background: var(--Greys-200, #f5f4f4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 361px;
+  padding: 20px 16px;
+  gap: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-3 {
+  border-radius: 10px;
+  border: 1px solid var(--Greys-400, #e0dfdf);
+  background: var(--Greys-200, #f5f4f4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 361px;
+  padding: 20px 16px;
+  gap: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-2 h4,
+.card-3 h4 {
+  color: var(--Greys-1200, #2f2e2e);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 0.1px;
+}
+
+.card-2 p,
+.card-3 p {
+  color: var(--Greys-1200, #2f2e2e);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.25px;
+}
+
+/* Contact styling */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-left: 3%;
+}
+
+.booking {
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-text {
+  color: var(--Greys-1300, #201f1f);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.connect h4 {
+  color: var(--Greys-1400, #111);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  padding: 10px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+.socials p {
+  color: var(--Greys-1400, #111);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.news {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 262px;
+  margin-right: 5%;
+}
+
+.news h4 {
+  color: var(--Greys-1400, #111);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  padding-bottom: 10px;
+}
+
+news p {
+  color: var(--Greys-1400, #111);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.button {
+  display: flex;
+  margin-top: 15px;
+}
+
+.button .btn {
+  width: 106px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+}
+
+.button #black {
+  background: var(--Greys-1200, #2f2e2e);
+  color: var(--Greys-Search-bar, #fff);
+}
+
+.button #grey {
+  background: var(--Greys-300, #eaeaea);
+  color: var(--Greys-1400, #111);
+}
+/* End of contact styling */
+
+/* footer */
+footer {
+  margin-top: 2px;
+}
+
+.copyright {
+  background: var(--Primary-900, #007a87);
+  color: var(--Greys-Search-bar, #fff);
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.25px;
 }
