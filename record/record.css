@@ -14,13 +14,12 @@ body {
 }
 
 .record-section {
-  width: 100%;
+  display: flex;
 }
 
 /* Sidebar styling */
 .sidebar {
-  float: left;
-  width: 272px;
+  width: 18%;
   height: 100%;
   background: #f5ffff;
 }
@@ -39,7 +38,7 @@ body {
 }
 
 .header-logo img {
-  width: 120px;
+  width: 150px;
 }
 
 .sidebar ul a {
@@ -72,8 +71,9 @@ ul li:hover a {
 }
 /* End of sidebar styling */
 
-.wrapper {
-  margin-left: 16%;
+.main-content {
+  flex: 1;
+  overflow: hidden;
 }
 
 /* Header styling */
@@ -136,16 +136,14 @@ ul li:hover a {
 
 /* Headline styling area */
 .record-headline {
-  display: grid;
-  justify-content: space-between;
   align-items: center;
-  padding: 35px 20px;
+  padding: 20px;
 }
+
 .user {
-  width: 161px;
+  width: 16%;
   height: 64px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -155,6 +153,7 @@ ul li:hover a {
   font-weight: 500;
   line-height: 32px;
 }
+
 .search-bar {
   display: inline-block;
   align-items: center;
@@ -163,7 +162,7 @@ ul li:hover a {
 }
 
 .search-input {
-  width: 1170px;
+  width: 1000px;
   height: 60px;
   padding: 16px 32px;
   border-radius: 10px;
@@ -190,11 +189,11 @@ ul li:hover a {
   height: 16px;
   top: 10px;
 }
+
 /* Hospital list styling */
 .hospital-list {
   padding: 20px;
   margin-bottom: 20%;
-  margin-left: 3%;
 }
 
 .hospital-list p {
@@ -210,18 +209,21 @@ ul li:hover a {
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   align-items: center;
   justify-content: center;
+  gap: 40px;
 }
 
-.card-1:hover, .card-2:hover, .card-3:hover {
-   transform: scale(1.05);
-   background: #007a87;
-   p, h4 {
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  transform: scale(1.05);
+  background: #007a87;
+  p,
+  h4 {
     color: #fff;
-   }
+  }
 }
 
 .card-1 {
@@ -231,8 +233,9 @@ ul li:hover a {
   border-radius: 10px;
   background: var(--Primary-900, #007a87);
   width: 361px;
+  height: 118px;
   padding: 20px 16px;
-  gap: 8px;
+  gap: 5px;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -270,8 +273,9 @@ ul li:hover a {
   justify-content: center;
   align-items: center;
   width: 361px;
+  height: 118px;
   padding: 20px 16px;
-  gap: 8px;
+  gap: 5px;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -283,8 +287,9 @@ ul li:hover a {
   justify-content: center;
   align-items: center;
   width: 361px;
+  height: 118px;
   padding: 20px 16px;
-  gap: 8px;
+  gap: 5px;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -312,18 +317,19 @@ ul li:hover a {
 }
 
 /* Contact styling */
-
 .contact {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  margin-left: 3%;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 20px;
 }
 
 .booking {
   align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 234px;
 }
 
 .booking-text {
@@ -335,12 +341,17 @@ ul li:hover a {
   letter-spacing: 0.25px;
 }
 
+.booking-img img {
+  width: 150px;
+}
+
 .connect {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  width: 430px;
 }
+
 .connect h4 {
   color: var(--Greys-1400, #111);
   font-family: "DM Sans";
@@ -354,7 +365,7 @@ ul li:hover a {
 
 .socials {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   text-align: center;
 }
 
@@ -371,7 +382,6 @@ ul li:hover a {
   flex-direction: column;
   align-items: flex-start;
   width: 262px;
-  margin-right: 5%;
 }
 
 .news h4 {
@@ -423,11 +433,7 @@ news p {
 }
 /* End of contact styling */
 
-/* footer */
-footer {
-  margin-top: 2px;
-}
-
+/* Footer styling */
 .copyright {
   background: var(--Primary-900, #007a87);
   color: var(--Greys-Search-bar, #fff);
