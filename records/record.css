@@ -732,18 +732,7 @@ input[type="text"] {
   margin-left: -20%;
 }
 
-.add-btn {
-  width: 361px;
-  height: 56px;
-  padding: 16px 108px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-}
-
-.btn {
+.saved-records .btn {
   display: flex;
   width: 320px;
   height: 56px;
@@ -751,6 +740,7 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  background: transparent;
   border-radius: 20px;
   border: 1px solid var(--Primary-900, #007a87);
 }
@@ -758,6 +748,59 @@ input[type="text"] {
 .btn:hover {
   background: #007a87;
   color: #f3feff;
+}
+/* End of report styling */
+
+/*Verification styling */
+.verification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 10%;
+}
+
+.user-profile p {
+  color: var(--Greys-1200, #2f2e2e);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  letter-spacing: 0.15px;
+}
+
+.user-profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.qr-code img {
+  width: 234px;
+  height: 221px;
+}
+
+.qr-text p {
+  color: var(--Greys-1200, #2f2e2e);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.25px;
+  padding: 10px;
+}
+
+.qr-text button {
+  display: flex;
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid var(--Primary-900, #007a87);
 }
 
 /* Contact styling */
@@ -838,7 +881,7 @@ input[type="text"] {
   padding-bottom: 10px;
 }
 
-news p {
+.news p {
   color: var(--Greys-1400, #111);
   font-family: "DM Sans";
   font-size: 16px;
@@ -848,12 +891,12 @@ news p {
   letter-spacing: 0.25px;
 }
 
-.button {
+.news .button {
   display: flex;
   margin-top: 15px;
 }
 
-.button .btn {
+.news .button .btn {
   width: 106px;
   height: 48px;
   justify-content: center;
@@ -866,12 +909,12 @@ news p {
   letter-spacing: 0.25px;
 }
 
-.button #black {
+.news .button #black {
   background: var(--Greys-1200, #2f2e2e);
   color: var(--Greys-Search-bar, #fff);
 }
 
-.button #grey {
+.news .button #grey {
   background: var(--Greys-300, #eaeaea);
   color: var(--Greys-1400, #111);
 }
