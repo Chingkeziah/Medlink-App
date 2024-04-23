@@ -71,6 +71,7 @@ ul li:hover a {
 }
 /* End of sidebar styling */
 
+/* Main content styling area */
 .main-content {
   flex: 1;
   overflow: hidden;
