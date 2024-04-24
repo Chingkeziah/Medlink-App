@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/appointment booking/patient-information.css">
+    <link rel="stylesheet" href="popup.css">
     <title>Patient Information</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
         >
       </li>
       <li>
-        <a href="#" class="link active"
+        <a href="/appointment booking/in-person.html" class="link active"
           ><img
             src="/assets/logos/streamline_waiting-appointments-calendar.png"
             alt=""
@@ -87,7 +88,7 @@
   </div>
   <div class="profile">
       <img src="/assets/images/Frame 1349.png" alt="profile picture" height="40px" width="40px">
-      <h5>Emee Ebong</h5>
+      <h5 class="name">Emee Ebong</h5>
     <div class="notifications">
       <a href="">
         <img src="/assets/logos/basil_notification-outline.svg" alt="notifications">
@@ -115,9 +116,7 @@
 </section>
 
 <!-- creating pop up -->
-
-
-<div class="box">
+<div class="box" class="open-popup" id="popup">
   <section class="pop-up">
     <header class="popup-header">
       <a href="/appointment booking/in-person.html">
@@ -144,7 +143,76 @@
   </section>
 </div>
 
+
+
+<!-- Select time -->
+<section class="select-time">
+  <h4>Select Time</h4>
+  <div class="time">
+    <div class="morning">
+      <button id="myButton" class="time-button">9:00</button>
+      <button id="myButton" class="time-button">10:00</button>
+      <button id="myButton" class="time-button">12:30</button>
+    </div>
+    <div class="day-time">
+        <button id="myButton" class="time-button">1:45</button>
+        <button id="myButton" class="time-button">2:30</button>
+        <button id="myButton" class="time-button">3:15</button>
+    </div>
+  </div>
+
+  <div class="book-now">
+    <a href="/appointment booking/patient-information.html">
+      <button type="submit" class="book">Book Now</button>
+    </a>
+
+    <a href="">
+      <button class="call">Start a call</button>
+    </a>
+  </div>
+</section>
+
+<!-- Contact section -->
+  <section class="contact-us">
+    <div class="contact-container">
+        <img src="/assets/images/Vector (3).png" alt="black medlink logo" class="medlink">
+        <p class="para">Book appointments and manage your health records with ease.</p>
+    </div>
+    <div class="social-icons">
+        <h5 class="connect">Connect with us</h5>
+        <div class="social-icon">
+            <img src="/assets/logos/ic_sharp-facebook.svg" alt="Facebook icon" width="28px" height="28px">
+              <p>Facebook</p>
+            
+              <img src="/assets/logos/mage_instagram-circle.svg" alt="Instagram icon" width="28px" height="28px">
+              <p> Instagram</p>
+            
+              <img src="/assets/logos/ant-design_twitter-circle-filled.svg" alt="Twitter icon" width="28px" height="28px">
+              <p>Twitter</p>
+            
+              <img src="/assets/logos/entypo-social_linkedin-with-circle.svg" alt="LinkedIn icon" width="28px" height="28px">
+              <p>LinkedIn</p>
+        </div>
+    </div>
+    <div class="newsletter">
+        <h6>Newsletter</h6>
+        <p class="news">Stay up to date with the latest news on healthcare technology</p>
+        <div class="buttons">
+            <button class="email"><a href="" class="email">Email</a></button>
+            <button class="subscribe"><a href="" class="subscribe">Subscribe</a></button>
+        </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+  <div class="copyright-protection">
+    Copyright@Medlink - All Rights Reserved | Privacy Policy
+  </div>
+  </footer>
+
+
 <script src="/appointment booking/patient-information.js">
 </script>
+<script src="./patient-information.js"></script>
 </body>
 </html>

@@ -115,11 +115,14 @@ prenexIcons.forEach(icon => {
 	});
 });
 
-// for the side bar
-window.onload = function () {
-    var sidebar = document.getElementById("sidebar");
-    var content = document.getElementById("wrapper");
-   
-    // Set sidebar height to match content height
-  sidebar.style.height = wrapper.offsetHeight + "px";
-  };
+
+// for selecting appointment time
+// Select the button element
+const button = document.querySelector('button');
+
+// Add an event listener for a button click event
+button.addEventListener('click', function() {
+  // Code to be executed when the button is clicked
+  console.log('Button clicked!');
+});
+
