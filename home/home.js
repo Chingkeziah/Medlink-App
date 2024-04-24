@@ -66,3 +66,8 @@ window.onload = function () {
   // Set sidebar height to match content height
   sidebar.style.height = wrapper.offsetHeight + "px";
 };
+
+document.getElementById("recordsButton").addEventListener("click", function () {
+  // Redirect the user to the desired page
+  window.location.href = "/records/record.html";
+});
