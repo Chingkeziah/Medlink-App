@@ -4,34 +4,39 @@ const form = document.querySelector("form");
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
+   
     const email = document.getElementById("email").value;
     const password = document.getElementById("psw").value;
-
+    
     if (email.trim() === "") {
         alert("Please enter your email.");
         return;
     }
-
+    
     if (password.trim() === "") {
         alert("Please enter your password.");
         return;
     }
-
+    
     // Simulated backend validation
     const isValidUser = validateUser(email, password);
+    
+    if (!isValidUser) {
+        alert("Invalid email or password.");
+        return;
+    }
+    
+    // If login is successful, redirect to the home page
+    window.location.href = "/home/home.html";
+ 
 
     if (!isValidUser) {
         alert("Invalid email or password.");
         return;
         
     }
-
-    alert("Login successful!"); 
-
-    console.log("Email:", email);
-    console.log("Password:", password);
-});
-
+})
+ 
 // Toggle password visibility
 const togglePassword = document.getElementById("togglePassword");
 const passwordInput = document.getElementById("psw");
