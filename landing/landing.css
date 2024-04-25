@@ -95,7 +95,7 @@ li>a>button:hover{
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     margin-top: 50px;
-    gap: 20px;
+    gap: 10px;
     color: white;
     font-size: 24px;
     font-weight: 500;
@@ -103,6 +103,7 @@ li>a>button:hover{
     word-wrap: break-word;
     background-color: rgb(232, 246, 252);
     width: 100%;
+    padding-bottom: 80px;
 }
 
 .appointment-booking>div{
@@ -110,14 +111,25 @@ li>a>button:hover{
     border-radius: 10px;
     background-size: cover;
     margin-top: 70px;
-    height: 100%;
-    width: 100%;
+    height: 350px;
+    width: 400px;
 }
-.image-container>.background-image{
-    height: 100%;
-    width: 100%;
+
+.image-container {
+    position: relative;
+    border-radius: 10px;
+    width: 400px; 
+    height: 350px; 
+    overflow: hidden; 
 }
-.aside{
+
+.image-container > .background-image {
+    width: 400px; 
+    height: 350px; 
+    object-fit: cover; 
+}
+
+.aside {
     position: absolute;
     top: 0;
     left: 0;
@@ -126,19 +138,51 @@ li>a>button:hover{
     border-radius: 10px;
     background-color: rgba(0, 121, 135, 0.377);
     z-index: 1;
-    width: 100%;
-    height: 100%;
-    
-}
-.p{
-    color: white;
+    padding: 20px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    color: white;
     font-size: 23px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-a>img{
-    margin-left: 30px;
+
+.aside .p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
 }
+
+.aside a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px; 
+}
+
+.aside a > img {
+    margin-top: 20px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.advantages{
+    text-align: center;
+    padding: 20px 0;
+}
+
 .feedback>button{
     outline: none;
     padding: 40px;
@@ -169,7 +213,8 @@ a>img{
     margin: 10px 0 0 45px;
 }
 
-.booking{
+.booking {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,16 +222,31 @@ a>img{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 50px;
 }
-.medlink{
-    margin: 20px 0 0 10px;
-    height: 100px;
-    width: 150px;
+
+.booking .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/shutterstock_582412642 1.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
 }
-.logo-white>img{
-    min-height: 80px;
-    min-width: 100px;
+
+.booking .content {
+    z-index: 1; 
+    margin-top: 20px;
 }
-.booking>h1{
+
+.logo-white>.medlink {
+    height: 90px;
+    width: 140px;
+    margin: 15px 0 -20px 0;
+}
+
+.booking > .content > h1 {
     color: var(--Greys-Search-bar, #FFF);
     text-align: center;
     font-family: "sofia pro";
@@ -196,8 +256,22 @@ a>img{
     line-height: normal;
     letter-spacing: -0.5px;
     width: 700px;
-    
 }
+.logo-white {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 15px 0 25px 0;
+}
+
+.booking > .content > a {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+
+
 
 /* contact  us section */
 
@@ -213,24 +287,42 @@ a>img{
 .medlink{
     width: 120px;
     height: 77px;
-    margin: 25px 0 0 90px;
+    margin: 25px 0 0 140px;
 }
-/* .icon{
-    gap: 30px;
-} */
 .para{
     margin: 10px;
     width: 250px;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 90px;
 }
-.icons h6{
-    text-align: center;
-}
-.icons{
-    margin: 30px 0 0 40px;
-}
-.contact-us>h6{
-    text-align: center;
+
+/* .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+} */
+.social-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 70px 0 30px -280px;
+    width: 300px;
+  }
+  .social-icon>*{
+    display: flex;
+    margin: 50px 0 0 -5px;
+  }
+  .social-icon>p{
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 60px;
+    display: flex;
+    gap: 5px;
+      
+  }
+ 
+.social-connect{
+    width: 200px;
+    margin: 60px 0 0 100px;
 }
 .newsletter{
     margin: 25px 0 0 30px;
