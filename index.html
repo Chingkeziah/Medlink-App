@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon", type="", sizes="32x32", href="/assets/logos/Vector.svg">
+    <link rel="icon", type="", sizes="32x32", href="/assets/images/Vector (4).png">
     <link rel="stylesheet" href="./landing/landing.css">
     <title>Medlink</title>
 </head>
@@ -20,10 +20,10 @@
                 <!-- Pages container -->
                 <div class="pages-container">
                     <ul class="pages">
-                        <li><a href="/landing/landing.html">Home</a></li>
-                        <li><a href="./appointment booking/in-person.html">Appointments</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Appointments</a></li>
                         <li><a href="">Records</a></li>
-                        <li><a href=""><button class="btn">Get Started</button></a></li>
+                        <li><a href="/files/signup.html"><button class="btn">Get Started</button></a></li>
                     </ul>
                 </div>
             </div>
@@ -35,7 +35,8 @@
             <h1>Medlink</h1>
         
             <p>Book appointments and manage your health records with ease</p>
-            <button>Get Started</button>
+                <button id="myButton">Get Started</button>
+            
         </div>
         <div class="images">
             <img src="./assets/images/Rectangle 3 (1).png" alt="background image" class="image">
@@ -49,7 +50,7 @@
                 <img src="assets/images/close-up-hands-typing-keyboard_23-2149033794 1.png" class="background-image">
                 <aside class="aside">
                     <p class="p">Book visual consultations from the comfort of your home</p>
-                    <a href="">
+                    <a href="/files/signup.html">
                         <img src="/assets/logos/icons8_right-round.svg">
                     </a>
                 </aside>
@@ -59,7 +60,17 @@
                 <img src="assets/images/an-online-consultation--patient-is-in-their-home-speaking-to-the-doctor-on-a-video-call 2 (1).png" class="background-image">
                 <aside class="aside">
                     <p class="p">Buy your medications online and have them delivered to your door step</p>
-                    <a href="">
+                    <a href="/files/signup.html">
+                        <img src="/assets/logos/icons8_right-round.svg">
+                    </a>
+                </aside>
+            </div>
+
+            <div class="image-container">
+                <img src="assets/images/pharmacy 1 (1).png" class="background-image">
+                <aside class="aside">
+                    <p class="p">Buy your medications online and have them delivered to your door step</p>
+                    <a href="/files/signup.html">
                         <img src="/assets/logos/icons8_right-round.svg">
                     </a>
                 </aside>
@@ -68,18 +79,8 @@
             <div class="image-container">
                 <img src="assets/images/medical-records 1.png" class="background-image">
                 <aside class="aside">
-                    <p class="p">Buy your medications online and have them delivered to your door step</p>
-                    <a href="">
-                        <img src="/assets/logos/icons8_right-round.svg">
-                    </a>
-                </aside>
-            </div>
-
-            <div class="image-container">
-                <img src="assets/images/medical-records 1.png" class="background-image">
-                <aside class="aside"></aside>
                     <p class="p">Book appointments for in-person consultations with ease</p>
-                    <a href="">
+                    <a href="/files/signup.html">
                         <img src="/assets/logos/icons8_right-round.svg">
                     </a>
                 </aside>
@@ -90,7 +91,7 @@
 
     <!-- perfomance -->
     <section>
-        <aside>
+        <aside class="advantages">
             <p>Explore the advantages of Medlink for improved hospital efficiency and healthcare</p>
             <p>Efficient hospital management is our driving principle</p>
         </aside>
@@ -117,19 +118,21 @@
             </div>
         </section>
 
-        <!-- <div class="booking">
-            
-        </div> -->
         <div class="booking">
-            <img src="/assets/images/shutterstock_582412642 1.png">
+            <div class="background-image">
+            
+            </div>
+            <div class="content">
                 <div class="logo-white">
                     <img src="./assets/images/Vector (2).png" alt="white medlink logo" class="medlink">
                 </div>
                 <h1>Your health and comfort is our top priority</h1>
-                <a href="">
-                    <img src="./assets/logos/icons8_right-round.svg">
+                <a href="/files/signup.html">
+                    <img src="./assets/logos/icons8_right-round.svg" class="logo-white">
                 </a>
+            </div>
         </div>
+        
     </section>
 <!-- Contact section -->
     <section class="contact-us">
@@ -137,17 +140,24 @@
                 <img src="./assets/images/Vector (3).png" alt="black medlink logo" class="medlink">
                 <p class="para">Book appointments and manage your health records with ease.</p>
             </div>
-            <div class="icons">
-                <h6>Connect with us</h6>
-                <div class="social-icons">
-                    <p><img src="./assets/logos/ic_sharp-facebook.svg" alt="Facebook icon" class="icon">Facebook</p>
-                    <p><img src="./assets/logos/mage_instagram-circle.svg" alt="Instagram icon" class="icon">Instagram</p>
-                    <p><img src="./assets/logos/ant-design_twitter-circle-filled.svg" alt="Twitter icon" class="icon">Twitter</p>
-                    <p><img src="./assets/logos/entypo-social_linkedin-with-circle.svg" alt="LinkedIn icon" class="icon">LinkedIn</p>
-                </div>
+            
+            <div class="social-icons"><h4 class="social-connect">Connect with us</h4>
+            <div class="social-icon">
+                <img src="/assets/logos/ic_sharp-facebook.svg" alt="Facebook icon" width="28px" height="28px">
+                  <p>Facebook</p>
+                
+                  <img src="/assets/logos/mage_instagram-circle.svg" alt="Instagram icon" width="28px" height="28px">
+                  <p> Instagram</p>
+                
+                  <img src="/assets/logos/ant-design_twitter-circle-filled.svg" alt="Twitter icon" width="28px" height="28px">
+                  <p>Twitter</p>
+                
+                  <img src="/assets/logos/entypo-social_linkedin-with-circle.svg" alt="LinkedIn icon" width="28px" height="28px">
+                  <p>LinkedIn</p>
+            </div>
             </div>
             <div class="newsletter">
-                <h6>Newsletter</h6>
+                <h4>Newsletter</h4>
                 <p>Stay up to date with the latest news on healthcare technology</p>
                 <div class="buttons">
                     <button class="email"><a href="" class="email">Email</a></button>
@@ -161,5 +171,8 @@
             Copyright@Medlink - All Rights Reserved | Privacy Policy
         </div>
     </footer>
+
+    <script src="/landing/landing.js">
+    </script>
 </body>
 </html>

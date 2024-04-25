@@ -244,7 +244,7 @@ body{
   gap: 5px;
     
 }
-.social-icons>h5{
+.social-icons>h4{
   width: 300px;
   text-align: center;
   margin: 70px 0 -30px 70px;
@@ -256,7 +256,7 @@ body{
   margin: 30px 0 -20px -50px;
 }
 .news{
-  margin-top: -10px;
+  margin-top: -30px;
 }
 .buttons{
   margin-top: -8px;
