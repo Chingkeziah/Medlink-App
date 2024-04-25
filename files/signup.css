@@ -6,8 +6,9 @@
   padding: 0;
   box-sizing: border-box;   
 }
-
-
+.login-link{
+  text-decoration: none;
+}
 /* wrapper style */
 .wrapper {
   display: flex;
