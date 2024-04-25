@@ -33,6 +33,7 @@ window.onload = function () {
 //   }
 // });
 
+//function for form visibility
 document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(".cards > div");
   const formContainer = document.getElementById("formContainer");
@@ -62,4 +63,10 @@ document.addEventListener("DOMContentLoaded", function () {
       formVisible = false;
     }
   }
+});
+
+//function for form submission
+document.getElementById("submitBtn").addEventListener("click", function () {
+  // Redirect the user to the desired page
+  window.location.href = "/records/reports.html";
 });

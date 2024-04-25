@@ -67,7 +67,13 @@ window.onload = function () {
   sidebar.style.height = wrapper.offsetHeight + "px";
 };
 
+//Navigation
 document.getElementById("recordsButton").addEventListener("click", function () {
   // Redirect the user to the desired page
   window.location.href = "/records/record.html";
+});
+
+document.getElementById("bookAppointment").addEventListener("click", function () {
+  // Redirect the user to the desired page
+  window.location.href = "/appointment booking/in-person.html";
 });
