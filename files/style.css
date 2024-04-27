@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.signup-link{
+  text-decoration: none;
+}
 .row {
   display: flex;
   align-items: center;
