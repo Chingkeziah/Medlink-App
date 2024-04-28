@@ -133,7 +133,78 @@ body{
     letter-spacing: 0.5px;
   }
   
-  
+  /* pop up styling  */
+  .popup-heading {
+    background-color: var(--Primary-900, #007A87);
+    width: 560px;
+    height: 100px; 
+    margin-left: -30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--Greys-Search-bar, #FFF);
+    
+  }
+  .popup-sh{
+    background-color: var(--Primary-900, #007A87);
+    margin: -30px 0 40px -30px;
+    width: 560px;
+    color: var(--Greys-Search-bar, #FFF);
+    font-size: 15px;
+  }
+
+  .go-back, .close-popup{
+    height: 30px;
+    width: 30px;
+    margin: 33px 10px 10px 10px;
+  }
+  .bh{
+    font-size: 30px;
+  }
+
+  /* Booking form */
+  .form > * {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px 0 50px;
+    
+  }
+  .input{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    color: #E0DFDF;
+    border: 1px solid #E0DFDF;
+    padding: 0 15px;
+  }
+  .ic{
+    margin-top: -6px;
+    margin-left: 100px;
+  }
+  .confidential{
+    color: var(--Secondary-500, #DD2663);
+    font-size: 14px;
+    font-family: "DM Sans";
+    margin-left: -50px;
+    
+  }
+  .problem-box{
+    height: 150px;
+    width: 400px;
+    border-radius: 5px;
+    color: #E0DFDF;
+    border: 1px solid #E0DFDF;
+    
+  }
+  .next{
+    padding: 10px 200px;
+    border-radius: 10px;
+    background: var(--Primary-900, #007A87);
+    outline: none;
+    border: none;
+    margin: 60px 0 20px 0;
+    color: white;
+  }
 
   /* select time */
 .select-time>h4{

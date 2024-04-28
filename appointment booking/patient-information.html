@@ -29,7 +29,7 @@
         >
       </li>
       <li>
-        <a href="/appointment booking/in-person.html" class="link active"
+        <a href="/appointment booking/appointment.html" class="link active"
           ><img
             src="/assets/logos/streamline_waiting-appointments-calendar.png"
             alt=""
@@ -126,27 +126,43 @@
 <div class="box" class="open-popup" id="popup">
   <section class="pop-up">
     <header class="popup-header">
-      <a href="/appointment booking/in-person.html">
-        <img src="/assets/logos/ion_chevron-back-outline.png" alt="back" class="go-back">
-      </a>
       <div class="popup-heading">
-        <h1>Patient Information</h1>
-        <h5>Enter your information here</h5>
+        <a href="/appointment booking/in-person.html">
+          <img src="/assets/logos/ion_chevron-back-outline.png" alt="back" class="go-back">
+        </a>
+          <h1 class="bh">Patient Information</h1>
+        <a href="/appointment booking/appointment.html">
+          <img src="/assets/logos/carbon_close-outline.png" alt="close" class="close-popup">
+        </a>
       </div>
-      <a href="/appointment booking/in-person.html">
-        <img src="/assets/logos/carbon_close-outline.png" alt="close" class="close-popup">
-      </a>
+      <h5 class="popup-sh">Enter your information here</h5>
     </header>
 
     <main class="patient-info">
-      <form>
+      <form class="form">
         <label for="fname">Full Name</label>
-        <input type="text" id="fname" name="fname">
+        <input type="text" class="input" name="fname" placeholder="Enter your name">
         <label for="age">Age</label>
-        <input type="number" id="age" name="age">
-
+        <input type="number" class="input" id="age" name="age" placeholder="Enter your age">
+        <label type="select">Sex</label>
+        <input onclick="showGenderOptions()" class="input" list="genderList" name="gender">
+          <datalist id="genderList">
+              <option value="Male">
+              <option value="Female">
+              <option value="Others">
+          </datalist>
+        <h4 class="description">Describe your problem here</h4>
+        <p class="confidential">
+            <img src="/assets/images/ic_baseline-privacy-tip.png" alt="confidential" class="ic" width="35px" height="31px">
+            The information provided here is 100% highly confidential</p>
+        <input type="text" placeholder="Type your message" class="problem-box">
       </form>
     </main>
+    <a href="/appointment booking/booking-form.html">
+      <button class="next">
+        Next
+      </button>
+    </a>
   </section>
 </div>
 

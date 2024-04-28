@@ -116,6 +116,35 @@ prenexIcons.forEach(icon => {
 });
 
 
+
+// select date
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all the date elements
+    const dateElements = document.querySelectorAll('.calendar-dates li');
+
+    // Add event listener to each date element
+    dateElements.forEach(function(dateElement) {
+        dateElement.addEventListener('click', function(event) {
+            // Remove the 'active' class from all date elements
+            dateElements.forEach(function(element) {
+                element.classList.remove('active');
+            });
+
+            // Add the 'active' class to the clicked date element
+            dateElement.classList.add('active');
+
+            // Get the selected date
+            const selectedDate = dateElement.textContent;
+
+            // Display the selected date (you can replace this with your own logic)
+            console.log('Selected date:', selectedDate);
+        });
+    });
+});
+
+
+
+
 // for selecting appointment time
 // Select the button element
 const button = document.querySelector('button');
