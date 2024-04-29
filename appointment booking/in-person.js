@@ -146,10 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // for selecting appointment time
-// Select the button element
 const button = document.querySelector('button');
-
-// Add an event listener for a button click event
 button.addEventListener('click', function() {
   // Code to be executed when the button is clicked
   console.log('Button clicked!');

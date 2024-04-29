@@ -608,7 +608,9 @@ input[type="text"] {
   font-weight: 500;
   line-height: 32px; /* 133.333% */
 }
-
+.btn-white{
+  color: #fff;
+}
 .records {
   display: inline-flex;
   flex-direction: column;
