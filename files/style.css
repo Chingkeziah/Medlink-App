@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: "Sofia Pro";
 }
-.signup-link{
+.signup-link {
   text-decoration: none;
 }
 .row {
@@ -218,9 +218,11 @@ input::placeholder {
 /* button style */
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  padding: 0 2rem;
+  margin: 0 1.5rem;
+  /* gap: 0.5rem; */
 }
 
 .button-container a {
@@ -230,7 +232,7 @@ input::placeholder {
 
 .btn1,
 .btn2 {
-  width: 9rem;
+  width: 100%;
   height: 2rem;
   display: flex;
   flex-direction: row;
@@ -240,6 +242,7 @@ input::placeholder {
   border: 0.0625rem solid gray;
   border-radius: 0.5rem;
   font-size: 11px;
+  padding: 0.3rem;
 }
 
 .btn1 img,
@@ -250,7 +253,7 @@ input::placeholder {
 
 .btn1 p,
 .btn2 p {
-  margin-left: 8px;
+  margin-left: 6px;
 }
 
 .btn1 p {
@@ -294,5 +297,69 @@ footer {
 @media screen and (max-width: 48rem) {
   .toggle {
     margin-left: 2%;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .col-2 {
+    display: none;
+  }
+
+  .col-20 {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .form {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    box-shadow: none;
+    padding: 20px;
+  }
+
+  .form h1 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .form-input-group {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .btn-login {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .btn-login button[type="submit"] {
+    width: 100%;
+    height: 3rem;
+  }
+
+  .button-container {
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 100%;
+    height: 3rem;
+    justify-content: space-between;
+  }
+
+  .footer-message {
+    font-size: 0.7rem;
   }
 }
