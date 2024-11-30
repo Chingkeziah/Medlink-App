@@ -9,6 +9,12 @@
 .signup-link {
   text-decoration: none;
 }
+
+.login-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .row {
   display: flex;
   align-items: center;
@@ -191,8 +197,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding: 20px 0 15px 0;
 }
 
 .horizontal1,
@@ -303,7 +308,7 @@ footer {
 /* Responsive for mobile */
 @media (max-width: 768px) {
   .row {
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     height: auto;
@@ -350,6 +355,7 @@ footer {
     gap: 0.5rem;
     margin: 0;
     padding: 0;
+    justify-content: space-around;
   }
 
   .btn1,
