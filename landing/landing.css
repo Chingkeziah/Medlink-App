@@ -572,8 +572,9 @@ footer {
     font-size: 14px;
     max-width: 250px;
   }
-  main {
-    padding: 1rem;
+  .content {
+    padding: 0;
+    margin: 0;
   }
   .appointment-booking {
     grid-template-columns: 1fr;
