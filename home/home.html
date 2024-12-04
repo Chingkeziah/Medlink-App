@@ -11,10 +11,26 @@
       href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon", type="", sizes="32x32", href="/assets/images/Vector (4).png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="icon"
+      ,
+      type=""
+      ,
+      sizes="32x32"
+      ,
+      href="/assets/images/Vector (4).png"
+    />
   </head>
   <body>
     <section class="home">
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
       <!--sidebar area-->
       <div class="sidebar" id="sidebar">
         <header class="header-logo">
@@ -84,9 +100,9 @@
       <div class="wrapper" id="wrapper">
         <!--Top area/header-->
         <div class="container-top">
-          <div class="text">
+          <!-- <div class="text">
             <h1>Homepage</h1>
-          </div>
+          </div> -->
           <div class="search-bar">
             <input
               type="text"
@@ -98,8 +114,11 @@
             </button>
           </div>
           <div class="profile">
-            <img src="/assets/images/Frame 1349.png" alt="" />
-            <h3>Emee Ebong</h3>
+            <div class="profile-name">
+              <img src="/assets/images/Frame 1349.png" alt="" />
+              <h3>Emee Ebong</h3>
+            </div>
+
             <div class="notification">
               <img src="/assets/logos/basil_notification-outline.svg" alt="" />
               <img src="/assets/logos/Frame 1375.svg" alt="" />
@@ -109,14 +128,20 @@
 
         <!--Headline area-->
         <div class="headline-container">
-          <div class="headline-img">
-            <img src="/assets/logos/Ellipse 100.svg" alt="" />
+          <div class="headline">
+            <div class="headline-img">
+              <img src="/assets/logos/Ellipse 100.svg" alt="" />
+            </div>
+
+            <span class="headline-text">
+              <h1>Hello, Emme</h1>
+              <p>
+                How are you feeling today,<br />
+                Need a doctor or consultation?
+              </p>
+            </span>
           </div>
-          <div class="headline-text">
-            <h1>Hello, Emme</h1>
-            <p>How are you feeling today,</p>
-            <p>Need a doctor or consultation?</p>
-          </div>
+
           <div class="headline-button">
             <a href="/appointment booking/appointment.html">
               <button class="btn" id="bookAppointment">Book Appointment</button>
@@ -131,10 +156,10 @@
               <img src="/assets/images/Frame 1171275071.svg" alt="" />
             </div>
             <div class="card-text">
-              <p>Need some medication?</p>
-            </div>
-            <div class="card-button">
-              <button class="btn">Pharmacy</button>
+              <p>Need to get some medication?</p>
+              <div class="card-button">
+                <button class="btn">Pharmacy</button>
+              </div>
             </div>
           </div>
 
@@ -144,9 +169,9 @@
             </div>
             <div class="card-text">
               <p>Access your medical records.</p>
-            </div>
-            <div class="card-button">
-              <button class="btn" id="recordsButton">Records</button>
+              <div class="card-button">
+                <button class="btn" id="recordsButton">Records</button>
+              </div>
             </div>
           </div>
         </div>

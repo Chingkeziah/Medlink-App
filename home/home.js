@@ -73,7 +73,22 @@ document.getElementById("recordsButton").addEventListener("click", function () {
   window.location.href = "/records/record.html";
 });
 
-document.getElementById("bookAppointment").addEventListener("click", function () {
-  // Redirect the user to the desired page
-  window.location.href = "/appointment booking/in-person.html";
+document
+  .getElementById("bookAppointment")
+  .addEventListener("click", function () {
+    // Redirect the user to the desired page
+    window.location.href = "/appointment booking/in-person.html";
+  });
+
+// Hamburger for sidebar
+const icon = hamburger.querySelector("i");
+
+hamburger.addEventListener("click", () => {
+  sidebar.classList.toggle("open");
+
+  if (sidebar.classList.contains("open")) {
+    icon.classList.replace("fa-bars", "fa-times");
+  } else {
+    icon.classList.replace("fa-times", "fa-bars");
+  }
 });
