@@ -99,6 +99,7 @@ h1 {
   gap: 20px;
   margin-top: 30px;
   color: #989494;
+  max-width: 318px;
 }
 
 input {
@@ -123,6 +124,8 @@ input {
   font-size: 15px;
   height: 40px;
   color: #989494;
+  width: 100%;
+  max-width: 636px;
 }
 
 .vitals {
