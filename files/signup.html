@@ -27,6 +27,7 @@
       ,
       href="/assets/images/Vector (4).png"
     />
+
     <title>SignUp</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,51 +53,73 @@
 
             <div class="input-1">
               <div class="firstName">
-                <label for="firstName"><b>First Name</b></label>
-                <input type="text" id="firstName" name="firstName" />
+                <!-- <label for="firstName"><b>First Name</b></label> -->
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First Name"
+                />
               </div>
               <div class="Surname">
-                <label for="surname"><b>Surname</b></label>
-                <input type="text" id="surname" name="surname" />
+                <!-- <label for="surname"><b>Surname</b></label> -->
+                <input
+                  type="text"
+                  id="surname"
+                  name="surname"
+                  placeholder="Surname"
+                />
               </div>
             </div>
 
             <div class="email">
-              <label for="email"><b>Email</b></label>
-              <input type="email" id="email" name="email" />
+              <!-- <label for="email"><b>Email</b></label> -->
+              <input type="email" id="email" name="email" placeholder="Email" />
             </div>
 
             <div class="input-2">
               <div class="password">
-                <label for="password"><b>Password</b></label>
-                <input type="password" id="password" name="password" />
+                <!-- <label for="password"><b>Password</b></label> -->
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                />
                 <i class="far fa-eye-slash" id="togglePassword1"></i>
               </div>
 
               <div class="confirmPassword">
-                <label for="confirmPassword"><b>Confirm Password</b></label>
+                <!-- <label for="confirmPassword"><b>Confirm Password</b></label> -->
                 <input
                   type="password"
                   id="confirmPassword"
                   name="confirmPassword"
+                  placeholder="Confirm Password"
                 />
                 <i class="far fa-eye-slash" id="togglePassword2"></i>
               </div>
             </div>
 
             <div class="dateOfBirth">
-              <label for="dateOfBirth"><b>Date of Birth</b></label>
-              <input type="date" id="dateOfBirth" name="dateOfBirth" />
+              <!-- <label for="dateOfBirth"><b>Date of Birth</b></label> -->
+              <input
+                type="date"
+                id="dateOfBirth"
+                name="dateOfBirth"
+                placeholder="Date of Birth"
+              />
             </div>
 
             <div class="input-3">
               <div class="Gender">
-                <label for="gender"><b>Gender</b></label>
+                <!-- <label for="gender"><b>Gender</b></label> -->
                 <input
                   id="gender"
                   name="gender"
                   onclick="showGenderOptions()"
                   list="genderList"
+                  placeholder="Gender"
                 />
                 <datalist id="genderList">
                   <option value="Male"></option>
@@ -106,53 +129,71 @@
               </div>
 
               <div class="Location">
-                <label for="location"><b>Location</b></label>
-                <input type="text" id="location" name="location" />
+                <!-- <label for="location"><b>Location</b></label> -->
+                <input
+                  type="text"
+                  id="location"
+                  name="location"
+                  placeholder="Location"
+                />
               </div>
             </div>
 
             <div class="input-4">
               <div class="Country code">
-                <label for="country code"><b>Country code</b></label>
-                <input type="text" id="countryCode" name="countryCode" />
+                <!-- <label for="country code"><b>Country code</b></label> -->
+                <input
+                  type="text"
+                  id="countryCode"
+                  name="countryCode"
+                  placeholder="Country code"
+                />
               </div>
               <div class="Mobile Number">
-                <label for="mobileNumber"><b>Mobile Number</b></label>
-                <input type="text" id="mobileNumber" name="mobileNumber" />
+                <!-- <label for="mobileNumber"><b>Mobile Number</b></label> -->
+                <input
+                  type="text"
+                  id="mobileNumber"
+                  name="mobileNumber"
+                  placeholder="Mobile Number"
+                />
               </div>
             </div>
 
             <div class="vitals">
               <div class="height">
-                <label for="height"><b>Height (cm)</b></label>
+                <!-- <label for="height"><b>Height(cm)</b></label> -->
                 <input
                   type="number"
                   id="height"
                   name="height"
                   min="45"
                   max="240"
+                  placeholder="Height(cm)"
                   required
                 />
               </div>
 
               <div class="weight">
-                <label for="weight"><b>Weight (kgs)</b></label>
+                <!-- <label for="weight"><b>Weight(kgs)</b></label> -->
                 <input
                   type="number"
                   id="weight"
                   name="weight"
                   min="2.5"
                   max="220"
+                  placeholder="Weight(kg)"
                   required
                 />
               </div>
 
               <div class="bloodType">
-                <label for="bloodType"><b>Blood Type</b></label>
+                <!-- <label for="bloodType"><b>Blood Type</b></label> -->
                 <input
                   list="bloodTypes"
                   id="bloodTypeInput"
                   name="bloodType"
+                  placeholder="Blood Type"
                   required
                 />
                 <datalist id="bloodTypes">
@@ -174,7 +215,7 @@
 
             <div class="account-container">
               Already have an account?
-              <a href="./login.html" class="login-link"> Log in</a>
+              <a href="./login.html" class="login-link"> Log In</a>
             </div>
 
             <div class="horizontal-container">

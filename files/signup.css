@@ -26,6 +26,8 @@
 .signup-row {
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .col-2 img {
@@ -43,6 +45,11 @@
 }
 
 /* form style */
+.signup-form {
+  margin: 0;
+  padding: 0;
+}
+
 .form {
   height: 100%;
   width: 400px;
@@ -72,15 +79,15 @@ h1 {
 }
 
 /* label style */
-label {
+/* label {
   font-family: "DM Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px; 
   letter-spacing: 0.25px;
   color: #1b1b1b;
-}
+} */
 
 /* input style */
 .input-1,
@@ -91,12 +98,13 @@ label {
   flex-direction: row;
   gap: 20px;
   margin-top: 30px;
+  color: #989494;
 }
 
 input {
   margin-top: 10px;
   background-color: #fff;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 10px;
   box-sizing: border-box;
   border: 1px solid var(--Greys-500, #d6d4d4);
   border-radius: 4px;
@@ -104,6 +112,7 @@ input {
   font-size: 12px;
   width: 100%;
   height: 20%;
+  color: #989494;
 }
 
 .dateOfBirth,
@@ -113,12 +122,13 @@ input {
   margin-bottom: 55px;
   font-size: 15px;
   height: 40px;
+  color: #989494;
 }
 
 .vitals {
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  gap: 10px;
 }
 
 .vital-item {
@@ -144,7 +154,7 @@ input:hover {
 .confirmPassword i {
   position: absolute;
   right: 10px;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -156,6 +166,16 @@ input[type="password"] {
 .far.fa-eye-slash,
 .fa-eye {
   color: #f98db1;
+}
+
+.height,
+.weight,
+.bloodType {
+  width: 188px;
+}
+
+datalist {
+  background-color: #989494;
 }
 
 /* account-container style */
@@ -330,5 +350,9 @@ footer {
 @media (max-width: 768px) {
   .col-2 {
     display: none;
+  }
+  .col-20 {
+    margin: 0;
+    padding: 0;
   }
 }
